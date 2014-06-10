@@ -9,7 +9,7 @@ public class InvalidMatrixException extends Exception {
 
     public InvalidMatrixException(int lin, int col) {
         super(String.format(
-            "Matrix of "+lin+"x"+col+" cannot be generated"));
+            "Matrix of %dx%d cannot be generated"), lin, col);
         this.lin = lin;
         this.col = col;
     }
